@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mr. Chicken</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header>
-    <h1>Mr. Chicken</h1>
-    <p>Premium Menu</p>
-</header>
+<section class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<img src="images/logo.png" class="logo">
+
+<h1>Mr. Chicken</h1>
+
+<p>
+أفضل وجبات الدجاج والبركر والمشروبات
+</p>
+
+<a href="#categories" class="btn">
+تصفح القائمة
+</a>
+
+</div>
+
+</section>
 
 
-<section class="categories">
+<section id="categories" class="categories">
 
-    <a href="western.html" class="category">
-        🍗
-        <h2>وجبات غربية</h2>
-        <p>عرض الأصناف</p>
-    </a>
+<h2 class="section-title">
+القائمة
+</h2>
 
+<div class="grid">
 
-    <a href="burger.html" class="category">
-        🍔
-        <h2>البركر</h2>
-        <p>عرض الأصناف</p>
-    </a>
+<a href="western.html" class="card">
 
+<div class="icon">
+🍗
+</div>
 
-    <a href="drinks.html" class="category">
-        🥤
-        <h2>المشروبات</h2>
-        <p>عرض الأصناف</p>
-    </a>
+<h3>وجبات غربية</h3>
 
+<span>عرض الأصناف</span>
+
+</a>
+
+<a href="burger.html" class="card">
+
+<div class="icon">
+🍔
+</div>
+
+<h3>البركر</h3>
+
+<span>عرض الأصناف</span>
+
+</a>
+
+<a href="drinks.html" class="card">
+
+<div class="icon">
+🥤
+</div>
+
+<h3>المشروبات</h3>
+
+<span>عرض الأصناف</span>
+
+</a>
+
+</div>
 
 </section>
 
 
 <footer>
-    <p>© Mr. Chicken</p>
+
+<p>
+© 2026 Mr. Chicken
+</p>
+
 </footer>
 
 </body>
+
 </html>
