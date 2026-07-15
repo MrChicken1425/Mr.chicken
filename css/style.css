@@ -1,229 +1,125 @@
-/* =========================
-   Google Font
-========================= */
+/* ==========================
+   Reset
+========================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Cairo',sans-serif;
+    scroll-behavior:smooth;
 }
 
 body{
-background:#0f0f0f;
-color:#fff;
-overflow-x:hidden;
+    background:#0b0b0b;
+    color:#fff;
+    overflow-x:hidden;
 }
 
-/* =========================
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+    background:rgba(0,0,0,.45);
+    backdrop-filter:blur(12px);
+    z-index:999;
+}
+
+.logo{
+    color:#D4AF37;
+    font-size:30px;
+    font-weight:800;
+}
+
+.menu-btn{
+    color:white;
+    border:1px solid #D4AF37;
+    padding:10px 24px;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.menu-btn:hover{
+    background:#D4AF37;
+    color:#000;
+}
+
+/* ==========================
    Hero
-========================= */
+========================== */
 
 .hero{
-height:100vh;
-background:url("images/hero.jpg") center center/cover no-repeat;
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+    height:100vh;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
 .overlay{
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.65);
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
 }
 
 .hero-content{
-position:relative;
-z-index:2;
-padding:20px;
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    padding:20px;
 }
 
-.logo{
-width:130px;
-margin-bottom:20px;
+.logo-image{
+    width:140px;
+    margin:auto;
+    margin-bottom:25px;
 }
 
 .hero h1{
-font-size:55px;
-font-weight:800;
-margin-bottom:15px;
+    font-size:64px;
+    margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
-color:#d8d8d8;
-margin-bottom:40px;
+    color:#ddd;
+    font-size:22px;
+    line-height:1.8;
 }
 
-.btn{
-
-display:inline-block;
-
-padding:15px 40px;
-
-background:#D4AF37;
-
-color:#000;
-
-font-weight:bold;
-
-text-decoration:none;
-
-border-radius:50px;
-
-transition:.3s;
-
+.hero-button{
+    display:inline-block;
+    margin-top:40px;
+    background:#D4AF37;
+    color:#000;
+    padding:16px 42px;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
 }
 
-.btn:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 15px 35px rgba(212,175,55,.35);
-
-}
-
-/* =========================
- Section
-========================= */
-
-.categories{
-
-padding:90px 8%;
-
-}
-
-.section-title{
-
-font-size:36px;
-
-margin-bottom:50px;
-
-text-align:center;
-
-color:#D4AF37;
-
-}
-
-/* =========================
- Grid
-========================= */
-
-.grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-gap:30px;
-
-}
-
-/* =========================
- Cards
-========================= */
-
-.card{
-
-background:#191919;
-
-padding:35px;
-
-border-radius:20px;
-
-text-align:center;
-
-text-decoration:none;
-
-color:#fff;
-
-transition:.35s;
-
-border:1px solid rgba(255,255,255,.05);
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-background:#242424;
-
-box-shadow:0 25px 45px rgba(0,0,0,.45);
-
-}
-
-.icon{
-
-font-size:65px;
-
-margin-bottom:20px;
-
-}
-
-.card h3{
-
-font-size:28px;
-
-margin-bottom:12px;
-
-}
-
-.card span{
-
-color:#bbbbbb;
-
-}
-
-/* =========================
- Footer
-========================= */
-
-footer{
-
-padding:35px;
-
-text-align:center;
-
-background:#090909;
-
-color:#888;
-
-}
-
-/* =========================
- Mobile
-========================= */
-
-@media(max-width:768px){
-
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero p{
-
-font-size:16px;
-
-}
-
-.logo{
-
-width:95px;
-
-}
-
-.section-title{
-
-font-size:28px;
-
-}
-
+.hero-button:hover{
+    transform:translateY(-6px);
 }
 
